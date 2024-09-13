@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EFE8DD;
+}
+.pagetitle{
+    position: relative;
+    height: clamp(400px, 60vw, 600px);
+    margin-top: 50px;
+    overflow: hidden;
+    background: url("boo-chan-daikakute-.png") repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    -webkit-animation: bgroop 40s linear infinite;
+    animation: bgroop 40s linear infinite;
+}
+@-webkit-keyframes bgroop {
+    from {background-position: 0  0;}
+    to {background-position: -3600px 0;}
+}
+@keyframes bgroop {
+    from {background-position: 0 0;}
+    to {background-position: -3600px 0;}
+}
+
+.summer_cancel{
+    width: 100vw;
+    text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 20px;
+    background-color: aqua;
+}
