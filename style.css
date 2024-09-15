@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
     background-color: #EFE8DD;
@@ -6,7 +8,6 @@ body{
 .pagetitle{
     position: relative;
     height: clamp(400px, 60vw, 600px);
-    margin-top: 50px;
     overflow: hidden;
     background: url("boo-chan-daikakute-.png") repeat-x;
     background-position: center;
@@ -16,22 +17,62 @@ body{
 }
 @-webkit-keyframes bgroop {
     from {background-position: 0  0;}
-    to {background-position: -3600px 0;}
+    to {background-position: -3186px 0;}
 }
 @keyframes bgroop {
     from {background-position: 0 0;}
-    to {background-position: -3600px 0;}
-}
-
-.summer_cancel{
-    width: 100vw;
-    text-align: center;
+    to {background-position: -3186px 0;}
 }
 
 .header{
     position: fixed;
     top: 0px;
     width: 100vw;
-    height: 20px;
-    background-color: aqua;
+    height: 40px;
+    background-color: rgb(255, 200, 111);
+    font-size: 24px;
+    color: antiquewhite;
+}
+
+.summer_cancel{
+    width: 100vw;
+    text-align: center;
+    font-size: 24px;
+}
+
+.swed{
+    position: relative;
+    height: clamp(40px, 10vw, 60px);
+    margin-top: 50px;
+    overflow: hidden;
+    background: url("sweden.gif") repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    -webkit-animation: bgroop 30s linear infinite;
+    animation: bgroop 30s linear infinite;
+}
+@-webkit-keyframes bgroop {
+    from {background-position: 0  0;}
+    to {background-position: -4090px 0;}
+}
+@keyframes bgroop {
+    from {background-position: 0 0;}
+    to {background-position: -4090px 0;}
+}
+
+.bereal{
+    font-size: 60px;
+    margin: 50px;
+}
+
+.erase{
+    text-decoration: line-through;
+}
+
+.gokiburi_cancel{
+    display: block;
+    text-align: center;
+}
+.gokiburi_cancel > img{
+    height: 20vh;
 }
